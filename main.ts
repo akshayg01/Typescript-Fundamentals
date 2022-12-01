@@ -55,13 +55,38 @@ console.log('color', c);
 enum color2 {'red' = 5, 'blue', 'green' };
 let c2 : color2 = color2.green
 console.log('enum withe specific value ', c2)
+//in other words, it is collection of constants... 
+
+
+
 
 
 //Any type
 // we are receiving value from third party... 
-let radomValue:any = 10;
-radomValue = true;
-radomValue = 'Akshay '
-console.log('any type', radomValue);
+let randomValue:any = 10;
+randomValue = true;
+//randomValue = 'Akshay '
+
+console.log('any type', randomValue);
+//if you are over using any means you are not taking advantage of Typescript 
+// intellisense will not work... 
+
+
+// new feature new type as unknow. 
+// not very clear need to read more about it...  
+//unknown is the type-safe counterpart of any.
+/*Anything is assignable to unknown,
+ but unknown isn’t assignable to anything but itself and any without a type assertion or a control flow based narrowing.
+*/
+let randomValue1:unknown = 10;
+randomValue1 = true;
+randomValue1 = 'Akshay'
+console.log('unknown type', randomValue1);
+console.log('intellisense is working after type assertion', (randomValue1 as string).toUpperCase());
+
+
+randomValue = randomValue1 as boolean;
+console.log('any type', randomValue);
+
 
 
