@@ -18,11 +18,11 @@ let i:undefined = undefined;
 
 //they are considered as subtype of number, string and bool
 
-let isNew : boolean = null; //error type null is assiagned to boolean
-console.log('isNew',isNew);
+//let isNew : boolean = null; //error type null is assiagned to boolean
+//console.log('isNew',isNew);
 
-let myName:string = undefined ;
-console.log('undefined asigned to string ', myName);
+//let myName:string = undefined ;
+//console.log('undefined asigned to string ', myName);
 
 
 // Array declaration 

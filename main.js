@@ -28,10 +28,10 @@ console.log(sentence);
 var n = null;
 var i = undefined;
 //they are considered as subtype of number, string and bool
-var isNew = null; //error type null is assiagned to boolean
-console.log('isNew', isNew);
-var myName = undefined;
-console.log('undefined asigned to string ', myName);
+//let isNew : boolean = null; //error type null is assiagned to boolean
+//console.log('isNew',isNew);
+//let myName:string = undefined ;
+//console.log('undefined asigned to string ', myName);
 // Array declaration 
 //two ways.. 
 var list1 = [1, 2, 3];
