@@ -141,6 +141,18 @@ function add2(num1:number, num2?:number):number
 console.log('function with optional parameter', add2(566))
 
 
+// Function with default value... 
+// another way of optional parameter... 
+function add3(num1:number, num2:number=0):number
+{
+    if(num2)
+    {
+    return num1+ num2
+    }
+    return num1;
+}
+
+console.log('function with parameter Default value', add3(566))
 
 
 
