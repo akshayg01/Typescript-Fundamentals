@@ -113,7 +113,20 @@ console.log('any type', randomValue);
  //multiType. it shows function of number type...
 
 
- 
+ /// functions....
+function add(num1, num2)
+{
+    return num1+ num2
+}
+
+function add1(num1:number, num2:number):number
+{
+    return num1+ num2
+}
+
+console.log('function', add1(15,566))
+
+
 
 
 

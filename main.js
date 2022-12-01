@@ -82,3 +82,19 @@ var b = 20;
 //b= true;
 // intellisense also work... 
 b.toFixed();
+// union of types of same variables. 
+var multiType;
+multiType = true;
+multiType = 100;
+// why not just use any... 
+/// it has some restriction... 
+// intellisense support... 
+//multiType. it shows function of number type...
+/// functions....
+function add(num1, num2) {
+    return num1 + num2;
+}
+function add1(num1, num2) {
+    return num1 + num2;
+}
+console.log('function', add1(15, 566));
