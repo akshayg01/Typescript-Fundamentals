@@ -155,7 +155,39 @@ function add3(num1:number, num2:number=0):number
 console.log('function with parameter Default value', add3(566))
 
 
+//interface to declare type 
+// so we can use it instead of define all object properties 
+// example we have address object which has 10 properties... 
+// we have few function which take address object then we have to specify object properties
+// better use interface..
+ 
+function fullName(person : {firstName:string, lastName: string}): string {
 
+    return person.firstName + ' ' + person.lastName;
+
+}
+
+let p = {
+    firstName: 'Hare' ,
+    lastName : 'Krishna'
+}
+
+console.log('Need to interface', fullName(p));
+
+
+// use interface
+interface Person {
+    firstName : string, 
+    lastName: string,
+}
+
+function fullNameWithInterface(person : Person): string {
+
+    return person.firstName + ' ' + person.lastName;
+
+}
+
+console.log('use of interface', fullNameWithInterface(p));
 
 
 
