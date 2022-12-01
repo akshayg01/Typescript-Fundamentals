@@ -88,5 +88,23 @@ console.log('intellisense is working after type assertion', (randomValue1 as str
 randomValue = randomValue1 as boolean;
 console.log('any type', randomValue);
 
+ // Type interference ..... 
+// it works only for variables which are asigned at the time of declaration.. 
+ let abc ;
+ abc=10;
+ abc = true;
+
+
+ let b = 20;
+  // error boolean is not assignable to number.. 
+  //b= true;
+// intellisense also work... 
+ b.toFixed();
+
+
+
+
+
+
 
 
