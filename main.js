@@ -174,3 +174,10 @@ var Manager = /** @class */ (function (_super) {
 }(Employee));
 var m = new Manager('Radha Rani');
 m.delegateWork();
+//Access modifier... 
+// public....
+//default is 
+//private 
+// if private we can't access in derived class...
+// protected 
+// it can used in class and derived class only..
