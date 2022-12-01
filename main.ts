@@ -102,6 +102,20 @@ console.log('any type', randomValue);
  b.toFixed();
 
 
+ // union of types of same variables. 
+ let multiType: number | boolean 
+ multiType = true;
+ multiType = 100;
+
+ // why not just use any... 
+ /// it has some restriction... 
+ // intellisense support... 
+ //multiType. it shows function of number type...
+
+
+ 
+
+
 
 
 
