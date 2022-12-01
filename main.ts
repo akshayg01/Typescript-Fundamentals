@@ -190,6 +190,37 @@ function fullNameWithInterface(person : Person): string {
 console.log('use of interface', fullNameWithInterface(p));
 
 
+//Class
+class Employee {
+    employeeName : string;
+    constructor(name:string) {
+        this.employeeName = name;
+    }
+
+    greet() {
+        console.log('Good Morning', this.employeeName)
+    }
+}
+
+let emp1 = new Employee('Krishna...');
+emp1.greet();
+
+
+//inheritance..... 
+
+class Manager extends Employee {
+    constructor(name:string) {
+        super(name);
+    }
+
+    delegateWork(){
+        console.log('I am delegating work...')
+    }
+}
+
+let m = new Manager('Radha Rani')
+m.delegateWork();
+
 
 
 
